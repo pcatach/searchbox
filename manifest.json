@@ -1,0 +1,27 @@
+{
+  "manifest_version":2,
+
+  "name": "Searchbox",
+  "description": "Make a Google search without changing tabs. Default shortcut: Alt+S",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "media/icon128.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "media/icon16.png",
+    "48": "media/icon48.png",
+    "128": "media/icon128.png"
+  },
+  "permissions":[
+    "https://ajax.googleapis.com/"
+  ],
+  "commands": {
+    "_execute_browser_action":{
+      "suggested_key": {
+        "default": "Alt+S"
+      }
+    }
+  }
+}
